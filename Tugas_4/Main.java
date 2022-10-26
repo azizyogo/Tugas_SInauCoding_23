@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 import constant.status.StatusBuku;
 
 import java.util.Date;
@@ -56,11 +57,11 @@ public class Main {
                 stat = false;
             }
         }
-
+        
         System.out.println("\n======== Daftar Buku ========");
         System.out.println("Judul\t\tPenerbit\t\tTahun Terbit\t\tPengarang\t\tISBN\t\tStatus\t\tTgl Kembali");
-        for(Book obj : listBook){
-            System.out.println(obj.getJudul()+"\t\t"+obj.getPenerbit()+"\t\t"+obj.getTahunTerbit()+"\t\t"+obj.getPengarang()+"\t\t"+obj.getIsbn()+"\t\t"+obj.getStatus()+"\t\t"+obj.getTglKembali());
+        for(Book book : listBook){
+            System.out.println(book.getJudul()+"\t\t"+book.getPenerbit()+"\t\t"+book.getTahunTerbit()+"\t\t"+book.getPengarang()+"\t\t"+book.getIsbn()+"\t\t"+book.getStatus()+"\t\t"+book.getTglKembali());
         }
     }
 }
